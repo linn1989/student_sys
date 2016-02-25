@@ -2,23 +2,23 @@ from django.shortcuts import render
 
 # Create your views here.
 
+
+# start here + login , or signin
+def start(request):
+	return render(request,'start.html')
+
+# to login page, show student sys main page
 def login(request):
-	name=request.GET['name']
-	number=request.GET['passwd']
-	return render(request,'web1.html',{'name':name,'number':number})
-
-def signin(request):
-	
-	return render(request,'login.html',{})
-
-def twosignin(request):
-	print('---------------------------')
-	name=request.GET['name']
+	id=request.GET['id']
 	passwd=request.GET['passwd']
-	return render(request,'signintwo.html',{'name':name,'passwd':passwd})
+	return render(request,'login_ok.html',{'id':id,'passwd':passwd})
 
-def search(request):
+# to signin page
+def signin(request):	
+	return render(request,'signin.html')
+# sign ok page
+def signin_ok(request):	
+	id=request.GET['id']
+	passwd=request.GET['passwd']
+	return render(request,'signin_ok.html',{'id':id,'passwd':passwd})
 
-	
-	pass
-	return render(request,'.html',{ })

@@ -2,6 +2,8 @@
 select delete update insert  Student Info System
 '''
 
+# need mysql DB + PROCEDURE SQL
+
 class Student:
 	studentNumber=0
 	name=''
