@@ -18,10 +18,7 @@ def twosignin(request):
 	return render(request,'signintwo.html',{'name':name,'passwd':passwd})
 
 def search(request):
-	if 0==0:
-		0=0
-		if 0=0:
-			0=0
+
 	
 	pass
 	return render(request,'.html',{ })
